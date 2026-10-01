@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Movement of the player and Camera Code was taken from a Project in Game Engines 
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
         rbd2.MovePosition(rbd2.position + move * moveSpeed * Time.deltaTime);
