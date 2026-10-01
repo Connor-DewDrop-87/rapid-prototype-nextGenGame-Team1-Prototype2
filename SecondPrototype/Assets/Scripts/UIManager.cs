@@ -17,11 +17,13 @@ public class UIManager : MonoBehaviour
     // Player Variables
     Player pr;
     // Start is called before the first frame update
+    Timer timer;
     void Start()
     {
         pr = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         MoneyText = GameObject.Find("MoneyText").GetComponent<TextMeshProUGUI>();
         TimerText = GameObject.Find("TimerText").GetComponent<TextMeshProUGUI>();
+        timer = GetComponent<Timer>();
         GetPlayerPlants();
     }
 
@@ -29,7 +31,7 @@ public class UIManager : MonoBehaviour
     {
         Cursor.transform.position = PlantUIList[pr.currentPlant].transform.position + new Vector3(0,250,0);
         MoneyText.text = "Money: "+pr.money.ToString();
-        TimerText.text = $"Time Left: ";
+        TimerText.text = "Time Left: " + timer.GetTimeText();
     }
     void GetPlayerPlants()
     {
