@@ -19,10 +19,12 @@ public class Planterns : MonoBehaviour
 
     public States state;
     public Plant plant;
+    public GameObject maxMoneyTimer;
     // Start is called before the first frame update
     void Start()
     {
         pr = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
     }
 
     // Update is called once per frame
@@ -69,6 +71,8 @@ public class Planterns : MonoBehaviour
                 {
                     plant.currentTime += Time.deltaTime;
                 }
+                // Increase, or decrease, the MoneyTimer based on how the plant is doing
+                maxMoneyTimer.transform.localScale = new Vector3(CheckMoney()/plant.maxMoney, 0.1225f, 1);
                 // Check if the player is in range of the Planterns
                 if (distanceFromPlayer <= reach)
                 {
@@ -81,10 +85,14 @@ public class Planterns : MonoBehaviour
                 }
                 break;
             case States.PULLEDOUT:
+                // Reset the Timer Scale
+                maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
                 plant = new Plant();
                 state = States.BARREN;
                 break;
+                
         }
+        
     }
 
     float CheckMoney()
@@ -93,8 +101,7 @@ public class Planterns : MonoBehaviour
         // Use the Vertex Formula to Calculate how much money the player gets
         // The Harvest Time is not exact to Y=0 but close and informs the player that money goes down
         money = -1*(Mathf.Pow(plant.currentTime-(plant.harvestTime/2),2))+(plant.maxMoney);
-        // Round to the nearest 100th
-        money = Mathf.Floor((money*100)/100);
+        money = Mathf.Round(money);
         return money;
     }
 }
