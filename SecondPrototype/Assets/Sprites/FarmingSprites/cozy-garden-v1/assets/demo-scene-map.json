@@ -1,0 +1,616 @@
+{
+  "name": "Cozy Garden v3 sample garden",
+  "tile_size": [
+    32,
+    32
+  ],
+  "grid": [
+    10,
+    10
+  ],
+  "render_scale": 3,
+  "layer_order": [
+    "ground",
+    "water",
+    "paths",
+    "soil and frames",
+    "fence",
+    "structures",
+    "plants and props",
+    "critters"
+  ],
+  "ground": [
+    [
+      "grass_meadow",
+      "grass_clover",
+      "grass_meadow",
+      "grass_clover",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_clover",
+      "grass_meadow",
+      "grass_clover",
+      "grass_clover",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_blossom",
+      "grass_meadow",
+      "grass_blossom",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_moss",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_moss"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_moss",
+      "grass_meadow",
+      "grass_moss",
+      "grass_moss"
+    ],
+    [
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow",
+      "grass_meadow"
+    ]
+  ],
+  "water_cells": [
+    {
+      "x": 7,
+      "y": 6,
+      "asset": "tiles/water_auto_06.png"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "asset": "tiles/water_auto_12.png"
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "asset": "tiles/water_auto_02.png"
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "asset": "tiles/water_auto_15.png"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "asset": "tiles/water_auto_09.png"
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "asset": "tiles/water_auto_01.png"
+    }
+  ],
+  "path_cells": [
+    {
+      "x": 5,
+      "y": 3,
+      "asset": "tiles/path_auto_06.png"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "asset": "tiles/path_auto_10.png"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "asset": "tiles/path_auto_10.png"
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "asset": "tiles/path_auto_08.png"
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "asset": "tiles/path_auto_05.png"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "asset": "tiles/path_auto_05.png"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "asset": "tiles/path_auto_05.png"
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "asset": "tiles/path_auto_05.png"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "asset": "tiles/path_auto_05.png"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "asset": "tiles/path_auto_01.png"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "raised_bed",
+      "x": 1,
+      "y": 5,
+      "w": 2,
+      "h": 2
+    },
+    {
+      "type": "raised_bed",
+      "x": 3,
+      "y": 5,
+      "w": 2,
+      "h": 2
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 1,
+      "mask": 4
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 2,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 3,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 4,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 5,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 6,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 7,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 0,
+      "y": 8,
+      "mask": 1
+    },
+    {
+      "type": "fence",
+      "x": 1,
+      "y": 0,
+      "mask": 2
+    },
+    {
+      "type": "fence",
+      "x": 1,
+      "y": 9,
+      "mask": 2
+    },
+    {
+      "type": "fence",
+      "x": 2,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 2,
+      "y": 9,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 3,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 3,
+      "y": 9,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 4,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 4,
+      "y": 9,
+      "mask": 8
+    },
+    {
+      "type": "fence",
+      "x": 5,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 6,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 6,
+      "y": 9,
+      "mask": 2
+    },
+    {
+      "type": "fence",
+      "x": 7,
+      "y": 0,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 7,
+      "y": 9,
+      "mask": 10
+    },
+    {
+      "type": "fence",
+      "x": 8,
+      "y": 0,
+      "mask": 8
+    },
+    {
+      "type": "fence",
+      "x": 8,
+      "y": 9,
+      "mask": 8
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 1,
+      "mask": 4
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 2,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 3,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 4,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 5,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 6,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 7,
+      "mask": 5
+    },
+    {
+      "type": "fence",
+      "x": 9,
+      "y": 8,
+      "mask": 1
+    },
+    {
+      "type": "gate_open",
+      "x": 5,
+      "y": 9
+    },
+    {
+      "type": "structures/greenhouse_nw.png",
+      "x": 7,
+      "y": 1,
+      "note": ""
+    },
+    {
+      "type": "structures/greenhouse_ne.png",
+      "x": 8,
+      "y": 1,
+      "note": ""
+    },
+    {
+      "type": "structures/greenhouse_sw.png",
+      "x": 7,
+      "y": 2,
+      "note": ""
+    },
+    {
+      "type": "structures/greenhouse_se.png",
+      "x": 8,
+      "y": 2,
+      "note": ""
+    },
+    {
+      "type": "crops/crop_carrot_stage_04.png",
+      "x": 1,
+      "y": 5,
+      "note": "carrot stage 4"
+    },
+    {
+      "type": "crops/crop_tomato_stage_04.png",
+      "x": 2,
+      "y": 5,
+      "note": "tomato stage 4"
+    },
+    {
+      "type": "crops/crop_cabbage_stage_04.png",
+      "x": 1,
+      "y": 6,
+      "note": "cabbage stage 4"
+    },
+    {
+      "type": "crops/crop_sunflower_stage_04.png",
+      "x": 2,
+      "y": 6,
+      "note": "sunflower stage 4"
+    },
+    {
+      "type": "crops/crop_tomato_stage_03.png",
+      "x": 3,
+      "y": 5,
+      "note": "tomato stage 3"
+    },
+    {
+      "type": "crops/crop_carrot_stage_03.png",
+      "x": 4,
+      "y": 5,
+      "note": "carrot stage 3"
+    },
+    {
+      "type": "crops/crop_sunflower_stage_03.png",
+      "x": 3,
+      "y": 6,
+      "note": "sunflower stage 3"
+    },
+    {
+      "type": "crops/crop_cabbage_stage_03.png",
+      "x": 4,
+      "y": 6,
+      "note": "cabbage stage 3"
+    },
+    {
+      "type": "flowers/flower_daisy_ivory_stage_03.png",
+      "x": 1,
+      "y": 3,
+      "note": ""
+    },
+    {
+      "type": "flowers/flower_tulip_coral_stage_03.png",
+      "x": 2,
+      "y": 3,
+      "note": ""
+    },
+    {
+      "type": "flowers/flower_bluebell_sky_stage_03.png",
+      "x": 3,
+      "y": 3,
+      "note": ""
+    },
+    {
+      "type": "flowers/flower_cosmos_violet_stage_03.png",
+      "x": 4,
+      "y": 3,
+      "note": ""
+    },
+    {
+      "type": "trees/tree_apple_01.png",
+      "x": 1,
+      "y": 1,
+      "note": ""
+    },
+    {
+      "type": "trees/tree_pear_02.png",
+      "x": 3,
+      "y": 1,
+      "note": ""
+    },
+    {
+      "type": "props/prop_signpost.png",
+      "x": 4,
+      "y": 8,
+      "note": "entry marker beside open south gate"
+    },
+    {
+      "type": "props/prop_bench.png",
+      "x": 6,
+      "y": 5,
+      "note": ""
+    },
+    {
+      "type": "props/prop_watering_can.png",
+      "x": 4,
+      "y": 7,
+      "note": ""
+    },
+    {
+      "type": "props/prop_seed_bag.png",
+      "x": 3,
+      "y": 7,
+      "note": ""
+    },
+    {
+      "type": "props/prop_terracotta_pot.png",
+      "x": 6,
+      "y": 4,
+      "note": ""
+    },
+    {
+      "type": "props/prop_basket.png",
+      "x": 3,
+      "y": 8,
+      "note": ""
+    },
+    {
+      "type": "props/prop_birdbath.png",
+      "x": 2,
+      "y": 8,
+      "note": ""
+    },
+    {
+      "type": "props/prop_lily_pad.png",
+      "x": 7,
+      "y": 7,
+      "note": "pond surface accent"
+    },
+    {
+      "type": "props/prop_pond_rock.png",
+      "x": 8,
+      "y": 6,
+      "note": "shoreline accent"
+    },
+    {
+      "type": "critters/critter_butterfly.png",
+      "x": 4,
+      "y": 2,
+      "note": ""
+    },
+    {
+      "type": "critters/critter_bee.png",
+      "x": 3,
+      "y": 2,
+      "note": ""
+    },
+    {
+      "type": "critters/critter_snail.png",
+      "x": 8,
+      "y": 8,
+      "note": ""
+    }
+  ],
+  "note": "Each listed cell is 32x32; transparent sprites use bottom-center pivots unless atlas metadata says otherwise."
+}

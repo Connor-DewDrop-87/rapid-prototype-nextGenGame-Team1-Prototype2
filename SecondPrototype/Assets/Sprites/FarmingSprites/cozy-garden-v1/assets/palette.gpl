@@ -1,0 +1,41 @@
+GIMP Palette
+Name: Cozy Garden 32x32
+Columns: 6
+# 36 opaque inks plus transparent
+ 52  47  61	ink
+ 81  68  88	ink_soft
+ 96  67  56	bark_dark
+130  87  67	bark
+174 119  83	bark_light
+ 63  98  71	leaf_dark
+ 87 131  90	leaf
+123 164 107	leaf_bright
+166 189 120	leaf_pale
+ 98 136  96	grass_dark
+128 164 111	grass
+157 189 124	grass_light
+182 188 122	moss
+112  75  68	earth_dark
+148  98  76	earth
+184 123  85	earth_light
+214 160 106	earth_gold
+108 115 114	stone_dark
+141 150 144	stone
+177 181 160	stone_light
+215 205 174	stone_glow
+ 70 123 137	water_dark
+ 95 158 163	water
+136 192 177	water_light
+190 218 182	water_glow
+242 228 192	cream
+230 184  92	sun
+210 110  97	coral
+232 149 125	coral_light
+149 129 171	lavender
+181 160 192	lavender_light
+107 146 183	sky
+167 195 192	sky_light
+226 125  73	carrot
+201  86  80	tomato
+228 124 104	tomato_light
+  0   0   0	transparent (RGBA 0,0,0,0)

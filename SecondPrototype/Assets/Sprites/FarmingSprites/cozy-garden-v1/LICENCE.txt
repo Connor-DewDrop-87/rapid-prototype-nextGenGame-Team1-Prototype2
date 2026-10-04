@@ -1,0 +1,25 @@
+# Cozy Garden - Asset Pack Licence (First Edition)
+
+Copyright (c) 2026 mossfold. All rights reserved.
+
+Thank you for supporting an independent creator. This licence applies to the
+digital assets in this pack ("the Assets"): all PNG images, tilesets, palette
+files, sample scenes, and documentation.
+
+You MAY:
+- Use the Assets in unlimited personal and commercial projects (games,
+  prototypes, videos, streams, educational material).
+- Modify, edit, and combine the Assets, including recolouring and reworking.
+- Use the Assets in projects sold or monetised on any platform.
+
+You MAY NOT:
+- Redistribute, resell, or share the Assets as-is, or as part of any asset
+  pack, template, or asset marketplace offering - including modified forms
+  where the Assets remain the primary value of the offering.
+- Claim authorship of the original Assets.
+
+The Assets are provided "as is", without warranty of any kind. In no event
+shall the author be liable for any claim, damages, or other liability arising
+from the use of the Assets.
+
+Questions? Contact mossfold on itch.io.
