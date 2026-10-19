@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
         {
             GameObject plantUIChanged = uiRef.PlantUIList[i];
             TextMeshProUGUI plantText = plantUIChanged.GetComponentInChildren<TextMeshProUGUI>();
-            plantText.text = plantables[i].Name + "\nAmount: " + plantables[i].amount;
+            plantText.text = $"{plantables[i].Name}\nAmount: {plantables[i].amount}\nMax Profit: {plantables[i].maxMoney}\nTime: {plantables[i].harvestTime} secs";
         }
     }
     void PlantSelect()
@@ -70,7 +70,16 @@ public class Player : MonoBehaviour
         {
             currentPlant = 3;
         }
-
+        // Plant 5
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            currentPlant = 4;
+        }
+        // Plant 6
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            currentPlant = 5;
+        }
         if (currentPlant > maxPlants)
         {
             currentPlant = maxPlants;

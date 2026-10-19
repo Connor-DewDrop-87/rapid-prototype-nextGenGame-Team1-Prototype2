@@ -39,7 +39,7 @@ public class UIManager : MonoBehaviour
         {
             GameObject newPlantUI = Instantiate(UIPrefab) as GameObject;
             TextMeshProUGUI plantText = newPlantUI.GetComponentInChildren<TextMeshProUGUI>();
-            plantText.text = pr.plantables[i].Name + "\nAmount: " + pr.plantables[i].amount;
+            plantText.text = $"{pr.plantables[i].Name}\nAmount: {pr.plantables[i].amount}\nMax Profit: {pr.plantables[i].maxMoney}\nTime: {pr.plantables[i].harvestTime} secs";
             newPlantUI.transform.SetParent(PlantSpacer.transform, false);
             PlantUIList.Add(newPlantUI);
         }

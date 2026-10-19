@@ -19,13 +19,11 @@ public class Planterns : MonoBehaviour
 
     public States state;
     public Plant plant;
-    public GameObject maxMoneyTimer;
     public SpriteRenderer plantGrowingSprite;
     // Start is called before the first frame update
     void Start()
     {
         pr = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
         plantGrowingSprite.sprite = null;
     }
 
@@ -78,24 +76,29 @@ public class Planterns : MonoBehaviour
                 {
                     plant.currentTime += Time.deltaTime;
                 }
+                // Update the Plant Sprites over time
                 UpdatePlantSprites();
-                // Increase, or decrease, the MoneyTimer based on how the plant is doing
-                maxMoneyTimer.transform.localScale = new Vector3(CheckMoney()/plant.maxMoney, 0.1225f, 1);
                 // Check if the player is in range of the Planterns
                 if (distanceFromPlayer <= reach)
                 {
                     // If Space is Pressed, the Plantern has its plant pulled out
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
-                        pr.money += CheckMoney();
+                        float profit = CheckMoney();
+                        // Make sure the Profit is not Negative
+                        if (profit < 0)
+                        {
+                            profit = 0;
+                        }
+                        pr.money += profit;
                         state = States.PULLEDOUT;
                     }
                 }
                 break;
             case States.PULLEDOUT:
                 // Reset the Timer Scale
-                maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
                 plant = new Plant();
+                // Reset the Plant Sprites
                 plantGrowingSprite.sprite = null;
                 plantGrowingSprite.color = Color.white;
                 state = States.BARREN;
@@ -123,12 +126,12 @@ public class Planterns : MonoBehaviour
             plantGrowingSprite.sprite = plant.plantSprites[0];
         }
         // Sprouting
-        if (plant.currentTime >= plant.harvestTime/ 8f)
+        if (plant.currentTime >= plant.harvestTime/ 4f)
         {
-            plantGrowingSprite.sprite = plant.plantSprites[2];
+            plantGrowingSprite.sprite = plant.plantSprites[1];
         }
         // Growing
-        if (plant.currentTime >= plant.harvestTime*3 / 8f)
+        if (plant.currentTime >= plant.harvestTime*3f / 8f)
         {
             plantGrowingSprite.sprite = plant.plantSprites[2];
         }
