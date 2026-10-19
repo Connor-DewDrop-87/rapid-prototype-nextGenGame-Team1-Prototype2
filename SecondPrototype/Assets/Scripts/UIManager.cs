@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
     {
-        Cursor.transform.position = PlantUIList[pr.currentPlant].transform.position + new Vector3(0,250,0);
+        Cursor.transform.position = PlantUIList[pr.currentPlant].transform.position + new Vector3(0,125,0);
         MoneyText.text = "Money: "+pr.money.ToString();
         TimerText.text = "Time Left: " + timer.GetTimeText();
     }

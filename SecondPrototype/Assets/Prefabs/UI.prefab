@@ -89,15 +89,15 @@ RectTransform:
   m_GameObject: {fileID: 936435995924914811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.25, y: 4.25, z: 4.25}
+  m_LocalScale: {x: 2.25, y: 2.25, z: 2.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6383593076365289736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39600003, y: 0.30155557}
-  m_AnchorMax: {x: 0.606, y: 0.703}
-  m_AnchoredPosition: {x: -2, y: -2.5}
-  m_SizeDelta: {x: -308, y: -329}
+  m_AnchorMin: {x: 0.441, y: 0.38770372}
+  m_AnchorMax: {x: 0.55700004, y: 0.605}
+  m_AnchoredPosition: {x: 2.5, y: 4}
+  m_SizeDelta: {x: -123, y: -130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3966738988659241271
 CanvasRenderer:
@@ -576,3 +576,6 @@ MonoBehaviour:
   Cursor: {fileID: 936435995924914811}
   PlantSpacer: {fileID: 194420920649090637}
   PlantUIList: []
+  MoneyText: {fileID: 0}
+  TimerText: {fileID: 0}
+  timer: {fileID: 0}
