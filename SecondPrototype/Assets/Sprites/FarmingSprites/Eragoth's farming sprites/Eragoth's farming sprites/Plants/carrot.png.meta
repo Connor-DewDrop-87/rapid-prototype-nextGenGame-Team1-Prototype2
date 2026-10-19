@@ -100,12 +100,12 @@ TextureImporter:
       name: carrot_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 3
-        width: 39
+        x: 36
+        y: 5
+        width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,12 +121,12 @@ TextureImporter:
       name: carrot_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 6
-        width: 6
-        height: 6
+        x: 52
+        y: 5
+        width: 8
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 8
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,6 +155,27 @@ TextureImporter:
       bones: []
       spriteID: cd1413943001a9d429baee4b1a762cbe
       internalID: -1083559012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: carrot_3
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 5
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21971534845e72f44bb2585bf359f1c4
+      internalID: 1667166729
       vertices: []
       indices: 
       edges: []
@@ -173,6 +194,7 @@ TextureImporter:
       carrot_0: 1754999064
       carrot_1: -294464989
       carrot_2: -1083559012
+      carrot_3: 1667166729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

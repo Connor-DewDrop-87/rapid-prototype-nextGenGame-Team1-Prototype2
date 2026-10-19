@@ -9,4 +9,5 @@ public class Plant
     public float harvestTime;
     public float maxMoney;
     public int amount;
+    public List<Sprite> plantSprites = new List<Sprite>();
 }

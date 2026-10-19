@@ -723,7 +723,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -10
+  m_SortingOrder: -9
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -68020,6 +68020,22 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].Name
+      value: Blueberry
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].Name
+      value: Strawberry
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].Name
+      value: Pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
       propertyPath: plantables.Array.data[0].amount
       value: 3
       objectReference: {fileID: 0}
@@ -68031,6 +68047,98 @@ PrefabInstance:
       propertyPath: plantables.Array.data[2].amount
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].amount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].maxMoney
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].harvestTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[0].plantSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].plantSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].plantSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].plantSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[0].plantSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1667166729, guid: c674c440ef646ac4db3b6f77f3250619, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[0].plantSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1754999064, guid: c674c440ef646ac4db3b6f77f3250619, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[0].plantSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -294464989, guid: c674c440ef646ac4db3b6f77f3250619, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[0].plantSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -1083559012, guid: c674c440ef646ac4db3b6f77f3250619, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].plantSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1278411912, guid: 77009c728b1faff49a113ec1b4464988, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].plantSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1391286664, guid: 77009c728b1faff49a113ec1b4464988, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].plantSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -647248611, guid: 77009c728b1faff49a113ec1b4464988, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[1].plantSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1455666038, guid: 77009c728b1faff49a113ec1b4464988, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].plantSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -24763432, guid: f5a500a2405f4e94a85865adcb2dd316, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].plantSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -2008365586, guid: f5a500a2405f4e94a85865adcb2dd316, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].plantSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 463252179, guid: f5a500a2405f4e94a85865adcb2dd316, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[2].plantSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 535470892, guid: f5a500a2405f4e94a85865adcb2dd316, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].plantSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -1759736475, guid: 352d7adc37346264cb69e5e2b40e94f0, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].plantSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 1229959025, guid: 352d7adc37346264cb69e5e2b40e94f0, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].plantSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -1896439382, guid: 352d7adc37346264cb69e5e2b40e94f0, type: 3}
+    - target: {fileID: 3168852808595647330, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
+      propertyPath: plantables.Array.data[3].plantSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1933988476, guid: 352d7adc37346264cb69e5e2b40e94f0, type: 3}
     - target: {fileID: 4694852094315202533, guid: 28b84130312a51c4ca5dfd2ee6c4df73, type: 3}
       propertyPath: m_Sprite
       value: 

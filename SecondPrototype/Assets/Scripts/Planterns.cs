@@ -20,11 +20,13 @@ public class Planterns : MonoBehaviour
     public States state;
     public Plant plant;
     public GameObject maxMoneyTimer;
+    public SpriteRenderer plantGrowingSprite;
     // Start is called before the first frame update
     void Start()
     {
         pr = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
+        plantGrowingSprite.sprite = null;
     }
 
     // Update is called once per frame
@@ -56,6 +58,11 @@ public class Planterns : MonoBehaviour
                         plant.maxMoney = pr.plantables[pr.currentPlant].maxMoney;
                         plant.harvestTime = pr.plantables[pr.currentPlant].harvestTime;
                         plant.currentTime = 0;
+                        plant.plantSprites.Clear();
+                        foreach (Sprite pl in pr.plantables[pr.currentPlant].plantSprites)
+                        {
+                            plant.plantSprites.Add(pl);
+                        }
                         state = States.PLANETED;
                     }
                 }
@@ -71,6 +78,7 @@ public class Planterns : MonoBehaviour
                 {
                     plant.currentTime += Time.deltaTime;
                 }
+                UpdatePlantSprites();
                 // Increase, or decrease, the MoneyTimer based on how the plant is doing
                 maxMoneyTimer.transform.localScale = new Vector3(CheckMoney()/plant.maxMoney, 0.1225f, 1);
                 // Check if the player is in range of the Planterns
@@ -88,6 +96,8 @@ public class Planterns : MonoBehaviour
                 // Reset the Timer Scale
                 maxMoneyTimer.transform.localScale = new Vector3(0, 0.1225f, 1);
                 plant = new Plant();
+                plantGrowingSprite.sprite = null;
+                plantGrowingSprite.color = Color.white;
                 state = States.BARREN;
                 break;
                 
@@ -103,5 +113,30 @@ public class Planterns : MonoBehaviour
         money = -1*(Mathf.Pow(plant.currentTime-(plant.harvestTime/2),2))+(plant.maxMoney);
         money = Mathf.Round(money);
         return money;
+    }
+
+    public void UpdatePlantSprites()
+    {
+        // New Plant
+        if (plant.currentTime >= 0)
+        {
+            plantGrowingSprite.sprite = plant.plantSprites[0];
+        }
+        // Sprouting
+        if (plant.currentTime >= plant.harvestTime/ 8f)
+        {
+            plantGrowingSprite.sprite = plant.plantSprites[2];
+        }
+        // Growing
+        if (plant.currentTime >= plant.harvestTime*3 / 8f)
+        {
+            plantGrowingSprite.sprite = plant.plantSprites[2];
+        }
+        // Full Grown
+        if (plant.currentTime >= plant.harvestTime / 2f)
+        {
+            plantGrowingSprite.sprite = plant.plantSprites[3];
+        }
+        // Rotting
     }
 }
