@@ -2,9 +2,13 @@ using UnityEngine;
 // Reference used: https://gamedevbeginner.com/how-to-make-countdown-timer-in-unity-minutes-seconds/
 public class Timer : MonoBehaviour
 {
+    public GameManager GM;
     public float timeLeft = 300f;
     public bool timerRunning = true;
-
+    void Start()
+    {
+        GM = GameObject.Find("GameManager").GetComponent<GameManager>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -19,6 +23,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Time has run out!");
                 timeLeft = 0;
                 timerRunning = false;
+                GM.ExitGame();
             }
         }
 

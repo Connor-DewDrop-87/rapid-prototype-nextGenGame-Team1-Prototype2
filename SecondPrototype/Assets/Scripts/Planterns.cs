@@ -105,6 +105,11 @@ public class Planterns : MonoBehaviour
                 break;
                 
         }
+        // When the timer hits 0, Pull Out All the Plants if they are not already Barren
+        if (pr.uiRef.timer.timerRunning==false && state != States.BARREN)
+        {
+            state = States.PULLEDOUT;
+        }
         
     }
 

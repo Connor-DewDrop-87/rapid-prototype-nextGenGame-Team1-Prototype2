@@ -27,6 +27,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Stop Moving when the Timer hits 0
+        if (uiRef.timer.timerRunning == false)
+        {
+            return;
+        }
         // Movement of the player and Camera Code was taken from a Project in Game Engines 
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");

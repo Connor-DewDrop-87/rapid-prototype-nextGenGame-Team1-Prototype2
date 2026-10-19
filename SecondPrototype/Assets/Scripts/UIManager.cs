@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     // Player Variables
     Player pr;
     // Start is called before the first frame update
-    Timer timer;
+    public Timer timer;
     void Start()
     {
         pr = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
